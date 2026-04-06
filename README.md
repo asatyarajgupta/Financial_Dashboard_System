@@ -1,10 +1,10 @@
-# 💰 Financial Dashboard System
+#  Financial Dashboard System
 
 A Spring Boot REST API for managing personal financial records — track income, expenses, and get insights like net balance, monthly trends, and category breakdowns. Secured with JWT authentication and role-based access control.
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 - **Java 17** + **Spring Boot 3**
 - **Spring Security** with JWT
@@ -15,7 +15,7 @@ A Spring Boot REST API for managing personal financial records — track income,
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 ### 1. Prerequisites
 - Java 17+
@@ -53,7 +53,7 @@ Swagger UI will be available at: `http://localhost:8080/swagger-ui/index.html`
 
 ---
 
-## 🔐 Authentication
+##  Authentication
 
 This API uses **JWT Bearer tokens**.
 
@@ -66,7 +66,7 @@ Authorization: Bearer <your_token>
 
 ---
 
-## 👥 Roles
+##  Roles
 
 | Role | Permissions |
 |------|-------------|
@@ -146,7 +146,7 @@ Authorization: Bearer <your_token>
 
 ---
 
-## 📦 Request Body Examples
+##  Request Body Examples
 
 ### Register / Login
 ```json
@@ -178,7 +178,7 @@ Authorization: Bearer <your_token>
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 .\mvnw test
@@ -208,7 +208,7 @@ src/
 
 ---
 
-## 🌱 Environment Variables Reference
+##  Environment Variables Reference
 
 Create a `.env.example` file with these keys (no real values):
 
@@ -221,6 +221,6 @@ JWT_SECRET=
 
 ---
 
-## 📝 License
+##  License
 
 MIT License — free to use and modify.
