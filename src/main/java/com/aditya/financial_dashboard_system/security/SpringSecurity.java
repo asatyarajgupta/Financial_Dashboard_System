@@ -1,11 +1,9 @@
 package com.aditya.financial_dashboard_system.security;
 import com.aditya.financial_dashboard_system.utils.JwtFilter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -30,6 +28,11 @@ public class SpringSecurity {
                         .requestMatchers("/api/admin/**").hasRole("ADMIN")
                         .requestMatchers( "/api/records/**").authenticated()
                         .requestMatchers("/api/public/**").permitAll()
+                        .requestMatchers(
+                                "/swagger-ui/**",
+                                "/swagger-ui.html",
+                                "/v3/api-docs/**"
+                        ).permitAll()
                         .anyRequest().denyAll()
 
                 )
